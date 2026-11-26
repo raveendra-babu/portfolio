@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of Raveendra Babu Matta, Python Backend Developer.">
+
+    <title>Raveendra Babu Matta | Python Backend Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('css', path='/style.css') }}">
+    
+</head>
+
+<body class="{{ theme }}-theme">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="nav container" aria-label="Main navigation">
+
+            <a class="logo" href="#home">RB<span>.</span></a>
+
+            <!-- CSS MOBILE MENU -->
+            <input type="checkbox" id="menu-check" class="menu-check">
+
+            <label for="menu-check" class="menu-toggle">
+                ☰
+            </label>
+
+            <ul class="nav-links">
+
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Training</a></li>
+                <li><a class="nav-contact" href="#contact">Contact</a></li>
+
+                <!-- THEME BUTTONS -->
+                <li class="theme-buttons">
+
+                    <a href="/change-theme/light"
+                       class="theme-btn {% if theme == 'light' %}active{% endif %}">
+                        ☀ Light
+                    </a>
+
+                    <a href="/change-theme/dark"
+                       class="theme-btn {% if theme == 'dark' %}active{% endif %}">
+                        ☾ Dark
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero container" id="home">
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    OPEN TO ENTRY-LEVEL OPPORTUNITIES
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Raveendra</span><br>
+                    Python Backend Developer.
+                </h1>
+
+                <p class="hero-text">
+                    I build practical backend applications and database-driven web solutions using Python, Django, FastAPI, and MySQL.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="btn btn-primary" href="#projects">
+                        Explore my work <span>↗</span>
+                    </a>
+
+                    <a class="btn btn-secondary" href="#contact">
+                        Get in touch
+                    </a>
+
+                </div>
+
+                <div class="hero-meta">
+
+                    <span>📍 Tirupati, India</span>
+                    <span>✉ bobbyraveendra@gmail.com</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-art">
+
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+
+                <div class="code-card">
+
+                    <div class="code-top">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <span>backend.py</span>
+                    </div>
+
+                    <div class="code-lines">
+
+                        <p><b>01</b> <span class="purple">class</span> <span class="yellow">Developer</span>:</p>
+                        <p><b>02</b> &nbsp; skills = [</p>
+                        <p><b>03</b> &nbsp;&nbsp; <span class="green">"Python"</span>,</p>
+                        <p><b>04</b> &nbsp;&nbsp; <span class="green">"Django"</span>,</p>
+                        <p><b>05</b> &nbsp;&nbsp; <span class="green">"FastAPI"</span>,</p>
+                        <p><b>06</b> &nbsp;&nbsp; <span class="green">"MySQL"</span></p>
+                        <p><b>07</b> &nbsp; ]</p>
+                        <p><b>08</b> &nbsp; <span class="purple">def</span> <span class="blue">build</span>(self):</p>
+                        <p><b>09</b> &nbsp;&nbsp; <span class="purple">return</span> <span class="green">"Solutions"</span></p>
+
+                    </div>
+
+                    <div class="code-footer">
+                        <span class="pulse"></span>
+                        Always learning. Always building.
+                    </div>
+
+                </div>
+
+                <div class="floating-tag tag-python">Python</div>
+                <div class="floating-tag tag-api">REST APIs</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="section about-section" id="about">
+
+            <div class="container about-grid">
+
+                <div>
+                    <p class="eyebrow">01 / ABOUT ME</p>
+
+                    <h2>
+                        Building useful things,<br>
+                        <span>one line at a time.</span>
+                    </h2>
+                </div>
+
+                <div class="about-content">
+
+                    <p>
+                        I'm a Python Backend Developer with hands-on project experience in Python, Django, FastAPI, MySQL, SQLAlchemy, REST API development, authentication, and database integration.
+                    </p>
+
+                    <p>
+                        I've developed an HRMS application using Django and an e-commerce application using FastAPI. I enjoy solving backend problems, working with databases, and turning requirements into reliable application features.
+                    </p>
+
+                    <div class="quick-facts">
+
+                        <div>
+                            <strong>2</strong>
+                            <span>Backend projects</span>
+                        </div>
+
+                        <div>
+                            <strong>3</strong>
+                            <span>Languages</span>
+                        </div>
+
+                        <div>
+                            <strong>2026</strong>
+                            <span>Training since July</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+        <section class="section container" id="skills">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">02 / TOOLKIT</p>
+                    <h2>Technical <span>skills</span></h2>
+                </div>
+
+                <p>Tools and concepts I use to develop backend applications.</p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <div class="skill-icon">⌘</div>
+                    <h3>Programming</h3>
+                    <p>Python</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">⚙</div>
+                    <h3>Backend</h3>
+                    <p>Django · Django REST Framework · FastAPI · Flask · REST APIs</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">▤</div>
+                    <h3>Databases</h3>
+                    <p>MySQL · PostgreSQL · SQLite · SQL</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">◈</div>
+                    <h3>ORM & Templates</h3>
+                    <p>Django ORM · SQLAlchemy · Jinja2</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">✧</div>
+                    <h3>Frontend</h3>
+                    <p>HTML · CSS</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">⌁</div>
+                    <h3>Tools & Workflow</h3>
+                    <p>Git · GitHub · Postman · PyCharm · VS Code · Basic CI/CD</p>
+                </article>
+
+            </div>
+
+
+            <div class="concepts">
+
+                <strong>Core concepts</strong>
+                <span>CRUD Operations</span>
+                <span>Authentication</span>
+                <span>Role-Based Access</span>
+                <span>Request Validation</span>
+                <span>Database Integration</span>
+
+            </div>
+
+        </section>
+
+
+       <div class="project-grid">
+
+    <!-- HRMS PROJECT -->
+    <article class="project-card">
+
+        <div class="project-visual hrms-visual">
+
+           <img style="height: inherit;"  src="{{ url_for('css', path='/project.png') }}"
+                 >
+
+            <span class="visual-label">HRMS / DJANGO</span>
+
+        </div>
+
+        <div class="project-body">
+
+            <div class="project-number">PROJECT 01</div>
+
+            <h3>Human Resource Management System</h3>
+
+            <p>
+                Developed an HRMS application for employee, department,
+                attendance, leave, and payroll management.
+            </p>
+
+            <ul>
+                <li>Role-based access for Admin, HR, and Employee users.</li>
+                <li>Leave submission, approval, and rejection workflows.</li>
+                <li>Attendance tracking and payroll records.</li>
+                <li>MySQL integration using Django ORM.</li>
+            </ul>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Django</span>
+                <span>MySQL</span>
+                <span>HTML/CSS</span>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- E-COMMERCE PROJECT -->
+    <article class="project-card">
+
+        <div class="project-visual shop-visual">
+
+            <img style="height: inherit;"  src="{{ url_for('css', path='/project.png') }}"
+                 >
+
+            <span class="visual-label">E-COMMERCE / FASTAPI</span>
+
+        </div>
+
+        <div class="project-body">
+
+            <div class="project-number">PROJECT 02</div>
+
+            <h3>E-Commerce Web Application</h3>
+
+            <p>
+                Built a server-rendered e-commerce application with
+                product browsing and order workflows.
+            </p>
+
+            <ul>
+                <li>Authentication and product/category management.</li>
+                <li>Pricing and inventory functionality.</li>
+                <li>Shopping cart with quantity updates and removal.</li>
+                <li>Checkout, order details, and order status.</li>
+                <li>Request validation and MySQL via SQLAlchemy.</li>
+            </ul>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>SQLAlchemy</span>
+                <span>Jinja2</span>
+                <span>MySQL</span>
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- EXPERIENCE SECTION -->
+<section class="section container" id="experience">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">04 / LEARNING JOURNEY</p>
+            <h2>Training &amp; <span>education</span></h2>
+        </div>
+
+    </div>
+
+
+    <div class="timeline">
+
+        <article class="timeline-item">
+
+            <div class="timeline-date">JUL 2026 — PRESENT</div>
+
+            <div class="timeline-content">
+
+                <h3>Full Stack Python Development Training</h3>
+                <h4>Innomatics Research Labs</h4>
+
+                <p>
+                    Practical training in Python, MySQL, Git, HTML, and CSS.
+                    Developing REST APIs with FastAPI, CRUD operations,
+                    request validation, and database integration.
+                    Using Git and GitHub for version control, with
+                    basic CI/CD familiarity.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+            <div class="timeline-date">2020 — 2024</div>
+
+            <div class="timeline-content">
+
+                <h3>B.Tech — Computer Science</h3>
+                <h4>Siddhartha Institute of Engineering &amp; Technology</h4>
+                <p>CGPA: 7.00</p>
+
+            </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+            <div class="timeline-date">2018 — 2020</div>
+
+            <div class="timeline-content">
+
+                <h3>Intermediate — PCM</h3>
+                <h4>Amaravathi College</h4>
+                <p>GPA: 8.92</p>
+
+            </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+            <div class="timeline-date">2017 — 2018</div>
+
+            <div class="timeline-content">
+
+                <h3>Class X</h3>
+                <h4>ZPHS, Andhra Pradesh</h4>
+                <p>GPA: 9.2</p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="certifications">
+
+        <p class="eyebrow">CERTIFICATIONS</p>
+
+        <div class="cert-list">
+
+            <span>NPTEL — The Joy of Computing using Python (2022)</span>
+            <span>Infosys — Python Foundation (2023)</span>
+            <span>Udemy — Full Stack Web Development (2024)</span>
+            <span>AWS — Cloud Foundations Skill Badges (2023)</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="section container" id="experience">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">04 / LEARNING JOURNEY</p>
+                    <h2>Training & <span>education</span></h2>
+                </div>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">JUL 2026 — PRESENT</div>
+
+                    <div class="timeline-content">
+
+                        <h3>Full Stack Python Development Training</h3>
+                        <h4>Innomatics Research Labs</h4>
+
+                        <p>
+                            Practical training in Python, MySQL, Git, HTML, and CSS. Developing REST APIs with FastAPI, CRUD operations, request validation, and database integration. Using Git and GitHub for version control, with basic CI/CD familiarity.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">2020 — 2024</div>
+
+                    <div class="timeline-content">
+
+                        <h3>B.Tech — Computer Science</h3>
+                        <h4>Siddhartha Institute of Engineering & Technology</h4>
+                        <p>CGPA: 7.00</p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">2018 — 2020</div>
+
+                    <div class="timeline-content">
+
+                        <h3>Intermediate — PCM</h3>
+                        <h4>Amaravathi College</h4>
+                        <p>GPA: 8.92</p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">2017 — 2018</div>
+
+                    <div class="timeline-content">
+
+                        <h3>Class X</h3>
+                        <h4>ZPHS, Andhra Pradesh</h4>
+                        <p>GPA: 9.2</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="certifications">
+
+                <p class="eyebrow">CERTIFICATIONS</p>
+
+                <div class="cert-list">
+
+                    <span>NPTEL — The Joy of Computing using Python (2022)</span>
+                    <span>Infosys — Python Foundation (2023)</span>
+                    <span>Udemy — Full Stack Web Development (2024)</span>
+                    <span>AWS — Cloud Foundations Skill Badges (2023)</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container contact-inner">
+
+                <p class="eyebrow">05 / LET'S CONNECT</p>
+
+                <h2>
+                    Have a project in mind?<br>
+                    <span>Let's build something.</span>
+                </h2>
+
+                <p class="contact-copy">
+                    I'm seeking an entry-level Python Backend Developer opportunity. Feel free to reach out.
+                </p>
+
+                <a class="btn btn-light" href="mailto:bobbyraveendra@gmail.com">
+                    Say hello <span>↗</span>
+                </a>
+
+                <div class="contact-details">
+
+                    <a href="tel:+919110728073">+91 9110728073</a>
+                    <a href="mailto:bobbyraveendra@gmail.com">bobbyraveendra@gmail.com</a>
+                    <span>Tirupati, India</span>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a target="_blank" href="https://linkedin.com/in/raveendrabobby756" aria-label="LinkedIn profile — add your URL">LinkedIn ↗</a>
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub profile — add your URL">GitHub ↗</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <a class="logo" href="#home">RB<span>.</span></a>
+
+            <p>
+                Designed & built by Raveendra Babu Matta · 2026
+            </p>
+
+            <a href="#home" >Back to top ↑</a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+
